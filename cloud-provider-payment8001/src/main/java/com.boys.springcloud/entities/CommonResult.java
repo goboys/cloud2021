@@ -5,8 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
+@AllArgsConstructor//全部实体构造方法
+@NoArgsConstructor//空实体构造方法
 public class CommonResult<T>
 {
     private Integer code;
