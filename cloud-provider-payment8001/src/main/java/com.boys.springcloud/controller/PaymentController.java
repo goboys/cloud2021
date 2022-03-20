@@ -29,11 +29,12 @@ public class PaymentController {
         }
     }
 
-        @GetMapping(value = "/payment/get/{id}")
+    @GetMapping(value = "/payment/get/{id}")
     public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id)
     {
         Payment payment = paymentService.getPaymentById(id);
         log.info("*****查询结果:{}",payment);
+        log.info("测试是否热部署");
         if (payment != null) {
             return new CommonResult(200,"查询成功",payment);
         }else{
