@@ -12,6 +12,8 @@ spring:
           ####搜索目录
           search-paths:
             - springcloud-config
+          default-label: master
+          skip-ssl-validation: true
       ####读取分支
       label: master
 
