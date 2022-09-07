@@ -12,8 +12,8 @@ spring:
           ####搜索目录
           search-paths:
             - springcloud-config
-          default-label: master
-          skip-ssl-validation: true
+          #default-label: master
+          #skip-ssl-validation: true
       ####读取分支
       label: master
 
@@ -22,4 +22,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+
+##rabbitmq相关配置,暴露bus刷新配置的端点
+management:
+  endpoints: #暴露bus刷新配置的端点
+    web:
+      exposure:
+        include: 'bus-refresh'
 
