@@ -1,4 +1,4 @@
-package com.boys.pringcloud;
+package com.boys.springcloud;
 
 
 import org.springframework.boot.SpringApplication;
